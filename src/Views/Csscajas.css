@@ -1,0 +1,33 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.box{
+    margin: 10px;
+    height: 150px;
+    width: 200px;
+    display: inline-block;
+    text-align:start;
+}
+
+body{
+    background: rgb(150, 225, 238);
+}
+
+.forms {
+    font-size: 1.2rem;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 4px;
+    font-size: medium;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.btn:hover {
+    background-color: white;
+}
