@@ -13,10 +13,9 @@ const Cajas = (props) => {
     const onSubmit = (e) =>{
         e.preventDefault();
         setCajas([...cajas,caja])
-        console.log("funciona el boton")
     }
     useEffect(()=>{
-        console.log(caja)
+
     },[caja]);
     
     const handlerForm = (target) =>{
@@ -30,7 +29,9 @@ const Cajas = (props) => {
                 <div className='forms'>
                     <label htmlFor="box">Color: </label>
                     <input type="color" name='color' onChange={(e) => handlerForm(e.target)} /> <br />
+                    <label>Height : </label>
                     <input type="number" name='height' onChange={(e) => handlerForm(e.target)} /><br />
+                    <label>Width : </label>
                     <input type="number" name='width' onChange={(e) => handlerForm(e.target)} /><br />
                 </div>    
                 <div className='forms'>
